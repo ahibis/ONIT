@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "concurrently -k \"nuxt dev\" \"cross-env IS_DEV=true server=true electron .\"",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "cross-env": "^7.0.3",
+    "electron": "^24.1.0",
+    "electron-builder": "^23.6.0",
+    "nuxt": "^3.4.0",
+    "nuxt-quasar-ui": "^1.6.0",
+    "vite-electron-plugin": "^0.8.2",
+    "vite-plugin-electron-renderer": "^0.13.14"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.2",
+    "crypto-js": "^4.1.1",
+    "mysql2": "^3.2.1",
+    "pg-hstore": "^2.3.4",
+    "quasar": "^2.11.10",
+    "sequelize": "^6.31.0"
+  }
+}
